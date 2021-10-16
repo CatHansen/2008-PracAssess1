@@ -5,12 +5,15 @@ import render from "./../../utils/render"
 const toDoList = async function () {
     const root = document.querySelector('#list')
     const itemData = await dataFetcher('toDo.json')
-    console.log(itemData)
     
     for (idx = 0; idx < itemData.length; idx += 1){
-    const list = render(listItemTemplate, itemData[idx])
+    const listItem = render(listItemTemplate, itemData[idx])
+    const category = itemData[idx].category;
+    listItem.classList.add(category);
 
-    root.append(list)
+    console.log(listItem.classList)
+
+    root.append(listItem)
     }
     // return await itemData.json()
 

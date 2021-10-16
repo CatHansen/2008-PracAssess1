@@ -2,7 +2,7 @@ const listItemTemplate = function({id, category, title, isComplete}){
     
     const template =
     `
-        <ul class="toDo">
+        <ul class="toDoItem">
             <li>ID: ${id}</li>
             <li>Category: ${category}</li>
             <li>Title: ${title}</li>

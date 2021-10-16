@@ -13,7 +13,7 @@ const render = function (template, data){
 
     //convert the template literal to markup
     // if template is for display only add to the view using the insertAdjacentHTML
-    console.log(templateStringLiteral)
+    
     const markup = makeElement(templateStringLiteral)
     
     return markup
