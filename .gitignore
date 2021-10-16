@@ -1,0 +1,9 @@
+# node modules
+node_modules
+
+# VS Code Files
+.vscode
+
+#Parcel Files
+dist
+.parcel-cache

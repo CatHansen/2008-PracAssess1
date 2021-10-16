@@ -1,0 +1,68 @@
+[
+    {
+        "id": "asdfi83b",
+        "category": "fun",
+        "title":"read LOTR",
+        "isComplete": false,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
+    },
+
+    {
+        "id": "4ndiowxe",
+        "category": "home",
+        "title":"Clean Bathroom",
+        "isComplete": true,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
+    },
+
+    {
+        "id": "m99sd4nd",
+        "category": "school",
+        "title":"2018 assignment",
+        "isComplete": true,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
+    },
+
+    {
+        "id": "b0n43xiu",
+        "category": "work",
+        "title":"get a job",
+        "isComplete": false,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
+    },
+
+    {
+        "id": "39vdihtp",
+        "category": "health",
+        "title":"Run",
+        "isComplete": false,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
+    },
+
+    {
+        "id": "osbx654k",
+        "category": "school",
+        "title":"2008 assignment",
+        "isComplete": false,
+        "startDate": "Wednesday September 3rd",
+        "startTime": "9:00am",
+        "endDate": "Wednesday September 3rd",
+        "endTime": "9:00am"
+    }
+
+]
