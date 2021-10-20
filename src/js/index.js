@@ -1,19 +1,16 @@
-import landingPage from './pages/landing';
-import toDoList from './components/toDoList/toDoList';
+import Router from "./router/router";
 
-toDoList()
+Router(window.location.pathname)
 
-const test = async function () {
-    const itemData = require('./data/toDo.json');
-    //const itemData = await dataFetcher('toDo.json');
-    //console.log(itemData)
-}
+// = function (){
 
-const app = document.querySelector('#list')
+// //toDoList()
+// app.appendChild(homePage())
 
-app.appendChild(landingPage())
+// }
 
-test()
+// export default Router
+
 
 // app.insertAdjacentHTML("afterend", header('small header'), 'ui-small-header')
 // app.insertAdjacentHTML("afterend", button('My Button'), 'ui-button')

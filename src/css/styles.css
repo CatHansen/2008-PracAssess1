@@ -3,6 +3,14 @@
 @use 'ui-button';
 @use 'page-header';
 body {
-  background-color: #64ed98;
+  background-color: #d4f8f2;
+}
+
+.button {
+  background-color: #a7ad96;
+}
+
+.dolphin {
+  width: 50vw;
 }
 /*# sourceMappingURL=styles.css.map */

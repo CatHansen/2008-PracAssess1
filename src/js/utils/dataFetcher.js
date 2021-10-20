@@ -3,6 +3,7 @@
 const dataFetcher = async function(url=null){
     // const itemData = require('./../data/test.json');
     const response = await fetch(url);
+    console.log(response)
     const jsonData = await response.json();
     return jsonData
 }
