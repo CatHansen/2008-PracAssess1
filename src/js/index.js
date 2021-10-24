@@ -1,15 +1,32 @@
-import Router from "./router/router";
+import {Router} from "./router/router";
+import homePage from "./pages/home";
+import { createStore} from "./redux/store";
+import {dataFetcher} from "./utils/dataFetcher";
+
+
 
 Router(window.location.pathname)
 
+
+const storeInit = async function (e) {
+    let toDoList = await dataFetcher('toDo.json')
+    
+    createStore(toDoList)
+}
+
+window.addEventListener('load', storeInit)
+//app.append(toDoPage())
+
+
+
 // = function (){
 
-// //toDoList()
+// toDoList()
 // app.appendChild(homePage())
-
+// const app = document.querySelector('#app')
 // }
 
-// export default Router
+//export default Router
 
 
 // app.insertAdjacentHTML("afterend", header('small header'), 'ui-small-header')

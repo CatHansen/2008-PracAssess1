@@ -1,4 +1,4 @@
-import Router from '../../router/router';
+import {Router} from '../../router/router';
 import makeElement from '../../utils/makeElement';
 
 const onRequestPage = function(e){
@@ -8,13 +8,21 @@ const onRequestPage = function(e){
 }
 
 const link = function (label="ui link", path="/", className="ui-link"){
-    
-    const template = `<button type="button" a href="${path}" class="${className}">${label}</button>`
-    
-    const buttonLink = makeElement(template)
-
-    buttonLink.addEventListener('click', onRequestPage)
-    return buttonLink
+    const template = `<a href="${path}" data-path="${path}" class="${className}">${label}</a>`
+    const element = makeElement(template);
+    element.addEventListener('click', onRequestPage)
+    return element
 }
+
+
+// const link = function (label="ui link", path="/", className="ui-link"){
+    
+//     const template = `<div><button type="button" a href="${path}" class="${className}">${label}</button></div>`
+    
+//     const buttonLink = makeElement(template)
+
+//     buttonLink.addEventListener('click', onRequestPage)
+//     return buttonLink
+// }
 
 export default link

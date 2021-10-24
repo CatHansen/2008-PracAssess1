@@ -1,3 +1,5 @@
+import makeElement from "../utils/makeElement"
+
 const listItemTemplate = function({id, category, title, isComplete}){
     
     const template =
@@ -9,7 +11,7 @@ const listItemTemplate = function({id, category, title, isComplete}){
             <li>Complete: ${isComplete}</li>
         </ul>
     `
-    return template
+    return makeElement(template)
 }
 
 export default listItemTemplate
