@@ -7,11 +7,13 @@ import tagline from "../components/header/tagline";
 const homePage = function() {
 
     const pageHeader = document.createElement('header')
-    
+    const titleLine = document.createElement('div')
     pageHeader.classList.add('page-header')
-    pageHeader.appendChild(makeElement(dolphin()))
-    pageHeader.appendChild(makeElement(title('Splash Tasks')))
-    pageHeader.appendChild(makeElement(tagline('Dive in and Do it')))
+    titleLine.classList.add('titleDiv')
+    titleLine.appendChild(makeElement(dolphin()))
+    titleLine.appendChild(makeElement(title('Splash Tasks', 'title')))
+    pageHeader.appendChild(titleLine)
+    pageHeader.appendChild(makeElement(tagline('Dive in and Make a Splash in Your Life')))
     const linkToDo = link('To Do List App', '/toDoPage')
     pageHeader.append(linkToDo)
 

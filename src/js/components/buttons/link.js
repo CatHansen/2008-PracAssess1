@@ -15,14 +15,4 @@ const link = function (label="ui link", path="/", className="ui-link"){
 }
 
 
-// const link = function (label="ui link", path="/", className="ui-link"){
-    
-//     const template = `<div><button type="button" a href="${path}" class="${className}">${label}</button></div>`
-    
-//     const buttonLink = makeElement(template)
-
-//     buttonLink.addEventListener('click', onRequestPage)
-//     return buttonLink
-// }
-
 export default link

@@ -2,15 +2,16 @@
 @use 'header';
 @use 'ui-button';
 @use 'page-header';
+@use 'toDoList';
 
 body{
     background-color: rgb(212, 248, 242);
 }
 
-.button{
-    background-color: rgb(167, 173, 150);
-}
+// .button{
+//     background-color: rgb(167, 173, 150);
+// }
 
-.dolphin{
-    width: 50vw;
-}
+// .dolphin{
+//     width: 10rem;
+// }
