@@ -1,4 +1,6 @@
-# Basic Framework For Front End Vanilla.js Projects
+# How to run this program on a local computer:
+
+
 
 ## Preflight Check
 1. Run npm install from the framework root folder. This will create the node_modules and install the dependancies found in the package.json file.
