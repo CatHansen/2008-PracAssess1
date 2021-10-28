@@ -19,14 +19,15 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    
     "gulp": "^4.0.2",
     "http-server": "^13.0.2",
     "parcel": "^2.0.0-rc.0",
     "sass": "^1.40.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "@parcel/transformer-sass": "^2.0.0-rc.0"
   },
   "keywords": []
 }
