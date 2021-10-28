@@ -1,6 +1,8 @@
 # How to run this program on a local computer:
 
-
+npm install
+npm start
+npm run dev
 
 ## Preflight Check
 1. Run npm install from the framework root folder. This will create the node_modules and install the dependancies found in the package.json file.

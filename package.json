@@ -13,7 +13,7 @@
     "dev": "npx parcel src/index.html",
     "build": "npx parcel build src/index.html",
     "clean:dev": "rm -rf .parcel-cache dist",
-    "clean:git": "rm -rf .parcel-cache dist  node_modules"
+    "clean:git": "rm -rf .parcel-cache dist node_modules"
   },
   "author": "",
   "license": "ISC",
