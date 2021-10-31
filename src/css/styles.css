@@ -415,26 +415,8 @@ table th {
   text-align: left;
 }
 
-.ui-base {
-  background-color: cornflowerblue;
-  font-size: 3rem;
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.ui-header {
-  background-color: cornflowerblue;
-  font-size: 3rem;
-  padding: 4rem 0;
-  text-align: center;
-  font-size: 4rem;
-}
-
-.ui-header-small {
-  background-color: cornflowerblue;
-  padding: 4rem 0;
-  text-align: center;
-  font-size: 4rem;
+body {
+  background-color: #6e6b64;
 }
 
 .button {
@@ -444,7 +426,7 @@ table th {
 
 .page-header {
   text-align: center;
-  padding: 3rem 0;
+  padding: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,22 +445,40 @@ table th {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1rem 2rem;
-  background-color: cornflowerblue;
+  background-color: #b4d2d3;
 }
 
 .title {
-  font-size: 2rem;
+  font-family: "Impact";
+  font-size: 2.3rem;
   padding: 1rem 2rem;
 }
 
 .titleDiv > h1 {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .dolphin {
   width: 10rem;
-  background-color: cornflowerblue;
   padding: 1rem;
+}
+
+.dolphin path {
+  fill: #044553;
+}
+
+header h2 {
+  color: #dbc3ac;
+}
+
+header a {
+  color: #152636;
+  border: black 1px solid;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  background-color: #9da3bc;
+  width: 8rem;
+  margin-left: calc(50vw - 4rem);
 }
 
 ul.toDoItem {
@@ -508,7 +508,7 @@ ul.health {
   background-color: yellow;
 }
 
-body {
-  background-color: #d4f8f2;
+.deadFish path {
+  fill: #dbc3ac;
 }
 /*# sourceMappingURL=styles.css.map */

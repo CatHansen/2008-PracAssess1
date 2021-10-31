@@ -1,12 +1,11 @@
 @use 'reboot';
-@use 'header';
+@use 'page';
+//@use 'header';
 @use 'ui-button';
 @use 'page-header';
 @use 'toDoList';
+@use 'pageNotFound';
 
-body{
-    background-color: rgb(212, 248, 242);
-}
 
 // .button{
 //     background-color: rgb(167, 173, 150);

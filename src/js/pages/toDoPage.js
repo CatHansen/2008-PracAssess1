@@ -20,7 +20,7 @@ const toDoPage = function(){
     titleLine.appendChild(makeElement(dolphin()))
     titleLine.appendChild(makeElement(title('Splash Tasks', 'title')))
     pageHeader.appendChild(titleLine)
-    const linkHome = link('Home', '/')
+    const linkHome = link('Currently: link to home.  Future: ADD button', '/')
     pageHeader.append(linkHome)
     pageBody.appendChild(pageHeader)
 
@@ -32,12 +32,9 @@ const toDoPage = function(){
         pageBody.append(container)
     }
 
-    // 
-    // pageHeader.appendChild(makeElement(dolphin()))
-    // pageHeader.appendChild(makeElement(title('Splash Tasks')))
-    // pageBody.appendChild(pageHeader)
+    // add the delete and edit buttons
 
-    // pageBody.appendChild(toDoData)
+
     return pageBody
 
 }
