@@ -17,9 +17,6 @@ const homePage = function() {
     const linkToDo = link('To Do List App', '/toDoPage')
     pageHeader.append(linkToDo)
 
-    // const img = logo();
-    // const head = header();
-    // const markup = img + head;
 
     return pageHeader
 }

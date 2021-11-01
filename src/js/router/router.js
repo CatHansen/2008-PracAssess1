@@ -25,11 +25,7 @@ const Router = function (pathname){
     }else{
         app.appendChild(routes[window.location.pathname]())
     }
-        
-        //CreatePage()
-        //app.appendChild(routes[isValidRoute]())
-        // app.appendChild(routes[window.location.pathname]())
-    
+
 }
 
 export { Router}

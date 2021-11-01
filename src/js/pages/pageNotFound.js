@@ -1,7 +1,6 @@
 import deadFish from "./../icons/deadFish";
 import title from "../components/header/title";
 import tagline from "../components/header/tagline";
-import button from "./../components/buttons/button";
 import makeElement from "./../utils/makeElement";
 import link from "./../components/buttons/link";
 

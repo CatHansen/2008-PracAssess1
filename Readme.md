@@ -1,35 +1,20 @@
-# How to run this program on a local computer:
+# Splash Tasks
 
-npm install
-npm start
-npm run dev
+## How to run this app locally:
 
-## Preflight Check
-1. Run npm install from the framework root folder. This will create the node_modules and install the dependancies found in the package.json file.
-```bash
-  npm install
-```
+### In bash:
+1. npm install
+1. npm start
+2. npm run dev (if needed)
 
-1. Run development build using the parcel bundler.
-```bash
-   npx parcel src/index.html
-```
-or
-```
-  npm start
-```
+## What is the Splash Tasks app?
 
-1. Run production build using the parcel bundler.
-```bash
-   npx parcel build src/index.html
-```
-or
-```
-  npm run build
-```
+Splash Tasks is a basic to-do list app that currently only has the functionality to display a to-do list from a json file, but the developer is working on functionality to add, delete and edit the tasks.
 
 
-# To Do List App
-
-Creating Components functions
-parameters  are properties and properties come from hard coded data
+## For developer:
+* add a favicon
+* make it not look so bad
+* delete 
+* add 
+* edit 
