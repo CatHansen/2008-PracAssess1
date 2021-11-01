@@ -14,7 +14,7 @@ const homePage = function() {
     titleLine.appendChild(makeElement(title('Splash Tasks', 'title')))
     pageHeader.appendChild(titleLine)
     pageHeader.appendChild(makeElement(tagline('Dive in and Make a Splash in Your Life')))
-    const linkToDo = link('To Do List App', '/toDoPage')
+    const linkToDo = link('To Do List App', '/todo')
     pageHeader.append(linkToDo)
 
 

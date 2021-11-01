@@ -1,7 +1,7 @@
 import { getStore } from "../redux/store";
-import dolphin from "./../icons/dolphin";
+import dolphin from "../icons/dolphin";
 import title from "../components/header/title";
-import makeElement from "./../utils/makeElement";
+import makeElement from "../utils/makeElement";
 import link from "../components/buttons/link";
 import listTemplate from "../templates/listTemplate";
 import listItemTemplate from "../templates/listItemTemplate";
