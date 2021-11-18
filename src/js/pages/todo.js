@@ -5,6 +5,7 @@ import makeElement from "../utils/makeElement";
 import link from "../components/buttons/link";
 import listTemplate from "../templates/listTemplate";
 import listItemTemplate from "../templates/listItemTemplate";
+import { Router } from "../router/router";
 
 
 const toDoPage = function(){
@@ -24,10 +25,17 @@ const toDoPage = function(){
     pageHeader.append(linkHome)
     pageBody.appendChild(pageHeader)
 
+    function onDeleteTask (e){
+        const taskId = {id:e.currentTarget.dataset.key}
+        Router('/delete', taskId)
+    }
+
     if(todoListStore !== null){
         const ul = container.querySelector('ul')
         const elements = todoListStore.map(li => listItemTemplate(li))
-        elements.forEach(element => ul.append(element))
+        elements.forEach(element => {element.querySelector('#delete').addEventListener('click', onDeleteTask)
+            ul.append(element)
+        })
         
         pageBody.append(container)
     }

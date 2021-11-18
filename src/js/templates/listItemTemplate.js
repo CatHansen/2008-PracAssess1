@@ -18,8 +18,8 @@ const listItemTemplate = function({id, category, title, isComplete}){
         </li>
         <li>
             <div>
-                <button class="delete">${trash()}</button>
-                <button class="edit">${edit()}</button>
+                <button id="delete" data-key="${id}">${trash()}</button>
+                <button id="edit" data-key="${id}">${edit()}</button>
             </div>
         </li>
     </ul>

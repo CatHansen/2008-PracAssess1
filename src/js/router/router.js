@@ -1,14 +1,15 @@
 import homePage from "./../pages/home";
 import toDoPage from "../pages/todo";
 import pageNotFound from "./../pages/notfound";
+import deletePage from "../pages/delete";
 
 const routes = {
     "/": homePage,
-    "/todo": toDoPage
+    "/todo": toDoPage,
+    "/delete": deletePage
 }
 
-const Router = function (pathname){
-
+const Router = function (pathname, params=null){
     const isValidRoute = Object.keys(routes).find(key => key === pathname)
 
     const app = document.querySelector('#app')
@@ -23,7 +24,7 @@ const Router = function (pathname){
     if(isValidRoute === undefined){
         app.appendChild(pageNotFound())
     }else{
-        app.appendChild(routes[window.location.pathname]())
+        app.appendChild(routes[isValidRoute](params))
     }
 
 }
