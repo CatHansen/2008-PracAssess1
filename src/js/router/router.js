@@ -6,7 +6,8 @@ import deletePage from "../pages/delete";
 const routes = {
     "/": homePage,
     "/todo": toDoPage,
-    "/delete": deletePage
+    "/delete": deletePage,
+    "/*":pageNotFound,
 }
 
 const Router = function (pathname, params=null){
@@ -21,7 +22,7 @@ const Router = function (pathname, params=null){
         window.location.origin + pathname
     )
 
-    if(isValidRoute === undefined){
+    if(isValidRoute === undefined || isValidRoute ===''){
         app.appendChild(pageNotFound())
     }else{
         app.appendChild(routes[isValidRoute](params))

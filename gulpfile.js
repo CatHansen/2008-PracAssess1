@@ -1,19 +1,19 @@
 // Using Node (the runtime) - Common JS Modules
 // Browser ES Modules 
 
-const {src, dest} = require('gulp')
+const {src, dest, series} = require('gulp')
 
-const static = function(cb){
+const static = function(){
     //task
     //src().pipe(plugins).pipe(compress).pipe(dest())
     return src('src/static/data/*.*')
     .pipe(dest('dist/data'))
-
     //*.* calls all files
-    // call the callback
-    cb()
+}
 
+function redirect(){
+    return (src('./_redirects').pipe(dest('./dist')))
 }
 
 //exports
-exports.default = static
+exports.default = series(static, redirect)
