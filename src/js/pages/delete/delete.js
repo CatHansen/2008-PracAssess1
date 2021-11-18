@@ -37,11 +37,11 @@ const deletePage = function(props){
     }
 
     let headerTemplate = `
-        <header class="welcome center-in-page">
+        <main class="welcome center-in-page">
             <h1>Delete Employee</h1>
             <p>Remove Employee</p> 
             <div></div>
-        </header>
+        </main>
         `
 
     const pageHeader = makeElement(headerTemplate)

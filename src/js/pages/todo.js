@@ -30,10 +30,18 @@ const toDoPage = function(){
         Router('/delete', taskId)
     }
 
+    function onEditTask (e){
+        const taskId = {id:e.currentTarget.dataset.key}
+        Router('/edit', taskId)
+    }
+
     if(todoListStore !== null){
         const ul = container.querySelector('ul')
         const elements = todoListStore.map(li => listItemTemplate(li))
         elements.forEach(element => {element.querySelector('#delete').addEventListener('click', onDeleteTask)
+            ul.append(element)
+        })
+        elements.forEach(element => {element.querySelector('#edit').addEventListener('click', onEditTask)
             ul.append(element)
         })
         
