@@ -4,10 +4,10 @@
         "category": "fun",
         "title":"read LOTR",
         "isComplete": false,
-        "startDate": "Wednesday September 3rd",
-        "startTime": "9:00am",
-        "endDate": "Wednesday September 3rd",
-        "endTime": "9:00am"
+        "startDate": "2021-04-03",
+        "startTime": "9:00",
+        "endDate": "2021-06-03",
+        "endTime": "9:00"
     },
 
     {
@@ -15,10 +15,10 @@
         "category": "home",
         "title":"Clean Bathroom",
         "isComplete": true,
-        "startDate": "Wednesday September 3rd",
-        "startTime": "9:00am",
-        "endDate": "Wednesday September 3rd",
-        "endTime": "9:00am"
+        "startDate": "2021-04-03",
+        "startTime": "9:00",
+        "endDate": "2021-04-03",
+        "endTime": "9:00"
     },
 
     {
@@ -26,10 +26,10 @@
         "category": "school",
         "title":"2018 assignment",
         "isComplete": true,
-        "startDate": "Wednesday September 3rd",
-        "startTime": "9:00am",
-        "endDate": "Wednesday September 3rd",
-        "endTime": "9:00am"
+        "startDate": "2021-04-03",
+        "startTime": "9:00",
+        "endDate": "2021-04-03",
+        "endTime": "9:00"
     },
 
     {
@@ -37,10 +37,10 @@
         "category": "work",
         "title":"get a job",
         "isComplete": false,
-        "startDate": "Wednesday September 3rd",
-        "startTime": "9:00am",
-        "endDate": "Wednesday September 3rd",
-        "endTime": "9:00am"
+        "startDate": "2019-03-19",
+        "startTime": "9:00",
+        "endDate": "2020-01-01",
+        "endTime": "9:00"
     },
 
     {
@@ -48,10 +48,10 @@
         "category": "health",
         "title":"Run",
         "isComplete": false,
-        "startDate": "Wednesday September 3rd",
-        "startTime": "9:00am",
-        "endDate": "Wednesday September 3rd",
-        "endTime": "9:00am"
+        "startDate": "2019-03-19",
+        "startTime": "9:00",
+        "endDate": "2019-03-19",
+        "endTime": "9:00"
     },
 
     {
@@ -59,10 +59,10 @@
         "category": "school",
         "title":"2008 assignment",
         "isComplete": false,
-        "startDate": "Wednesday September 3rd",
-        "startTime": "9:00am",
-        "endDate": "Wednesday September 3rd",
-        "endTime": "9:00am"
+        "startDate": "2020-01-01",
+        "startTime": "9:00",
+        "endDate": "2020-01-01",
+        "endTime": "9:00"
     }
 
 ]
