@@ -5,9 +5,9 @@
         "title":"read LOTR",
         "isComplete": false,
         "startDate": "2021-04-03",
-        "startTime": "9:00",
+        "startTime": "09:00",
         "endDate": "2021-06-03",
-        "endTime": "9:00"
+        "endTime": "09:00"
     },
 
     {
@@ -16,9 +16,9 @@
         "title":"Clean Bathroom",
         "isComplete": true,
         "startDate": "2021-04-03",
-        "startTime": "9:00",
+        "startTime": "09:00",
         "endDate": "2021-04-03",
-        "endTime": "9:00"
+        "endTime": "09:00"
     },
 
     {
@@ -27,9 +27,9 @@
         "title":"2018 assignment",
         "isComplete": true,
         "startDate": "2021-04-03",
-        "startTime": "9:00",
+        "startTime": "09:00",
         "endDate": "2021-04-03",
-        "endTime": "9:00"
+        "endTime": "19:00"
     },
 
     {
@@ -38,9 +38,9 @@
         "title":"get a job",
         "isComplete": false,
         "startDate": "2019-03-19",
-        "startTime": "9:00",
+        "startTime": "09:00",
         "endDate": "2020-01-01",
-        "endTime": "9:00"
+        "endTime": "19:00"
     },
 
     {
@@ -49,9 +49,9 @@
         "title":"Run",
         "isComplete": false,
         "startDate": "2019-03-19",
-        "startTime": "9:00",
+        "startTime": "09:00",
         "endDate": "2019-03-19",
-        "endTime": "9:00"
+        "endTime": "19:00"
     },
 
     {
@@ -60,9 +60,9 @@
         "title":"2008 assignment",
         "isComplete": false,
         "startDate": "2020-01-01",
-        "startTime": "9:00",
+        "startTime": "09:00",
         "endDate": "2020-01-01",
-        "endTime": "9:00"
+        "endTime": "19:00"
     }
 
 ]

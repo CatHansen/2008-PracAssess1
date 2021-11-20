@@ -1,4 +1,5 @@
 import { getStore } from "../redux/store";
+import button from "../components/buttons/button";
 import dolphin from "../icons/dolphin";
 import title from "../components/header/title";
 import makeElement from "../utils/makeElement";
@@ -6,6 +7,7 @@ import link from "../components/buttons/link";
 import listTemplate from "../templates/listTemplate";
 import listItemTemplate from "../templates/listItemTemplate";
 import { Router } from "../router/router";
+import { v4 as uuidv4} from 'uuid';
 
 
 const toDoPage = function(){
@@ -13,6 +15,7 @@ const toDoPage = function(){
     const pageHeader = document.createElement('header')
     const pageBody = document.createElement('div')
     const container = listTemplate()
+    const addButton = makeElement(button('Add new Task'))
     
     const titleLine = document.createElement('div')
     pageHeader.classList.add('page-header')
@@ -21,8 +24,9 @@ const toDoPage = function(){
     titleLine.appendChild(makeElement(dolphin()))
     titleLine.appendChild(makeElement(title('Splash Tasks', 'title')))
     pageHeader.appendChild(titleLine)
-    const linkHome = link('Currently: link to home.  Future: ADD button', '/')
-    pageHeader.append(linkHome)
+    addButton.addEventListener('click', onAddTask)
+    //const linkHome = link('Add New Task', '/add')
+    pageHeader.append(addButton)
     pageBody.appendChild(pageHeader)
 
     function onDeleteTask (e){
@@ -33,6 +37,11 @@ const toDoPage = function(){
     function onEditTask (e){
         const taskId = {id:e.currentTarget.dataset.key}
         Router('/edit', taskId)
+    }
+
+    function onAddTask (e){
+        const taskId = uuidv4().substr(0,8)
+        Router('/add', taskId)
     }
 
     if(todoListStore !== null){

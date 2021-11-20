@@ -41,8 +41,7 @@ const deletePage = function(props){
 
     let headerTemplate = `
         <main class="welcome center-in-page">
-            <h1>Delete Employee</h1>
-            <p>Remove Employee</p> 
+            <h1>Delete Task</h1>
             <div></div>
         </main>
         `

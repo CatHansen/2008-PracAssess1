@@ -41,7 +41,7 @@ const editPage = function(props){
 
     let headerTemplate = `
         <main class="welcome center-in-page">
-            <h1>Edit Employee</h1>
+            <h1>Edit Task</h1>
             <div></div>
         </main>
         `

@@ -8,8 +8,8 @@ const editForm = function ({id, category, title, isComplete, startDate, startTim
             <input type="text" id="idCode" name="idCode" disabled="true" value="${id}">
             <br/>
             <label for="category">Category</label>
-            <select id="category" name="category" selected="${category}">
-                <option value="">Category</option>
+            <select id="category" name="category" value="${category}">
+                <option value="${category}">${category}</option>
                 <option value="school">School</option>
                 <option value="home">Home</option>
                 <option value="work">Work</option>
@@ -19,9 +19,9 @@ const editForm = function ({id, category, title, isComplete, startDate, startTim
             <br/>
             <label>Completed</label>
             <input type="checkbox" id="isComplete">
-            <script>
-                document.getElementById("isComplete").checked = ${isComplete}
-            </script>
+                <script>
+                    document.getElementById("isComplete").checked = ${isComplete}
+                </script>
             <br/>
             <label for="title">To Do</label>
             <input type="text" id="title" name="title" value="${title}">
@@ -32,8 +32,8 @@ const editForm = function ({id, category, title, isComplete, startDate, startTim
             <label for="startTime">Start Time</label>
             <input type="time" id="startTime" name="startTime" value="${startTime}">
             <br/>
-            <label for="endDay">End Date</label>
-            <input type="Date" id="endDay" name="endDay" value="${endDate}">
+            <label for="endDate">End Date</label>
+            <input type="Date" id="endDate" name="endDate" value="${endDate}">
             <br/>
             <label for="endTime">End Time</label>
             <input type="time" id="endTime" name="endTime" value="${endTime}">

@@ -17,6 +17,11 @@ function reducer (action){
             action.cb()
         return "edit task";
         case "add":
+            const newItem = action.payload.addTask
+            console.log(newItem)
+            newStore = [...store, newItem]
+            updateStore(newStore)
+            action.cb()
         return "add new task";
         default: return store
     }
