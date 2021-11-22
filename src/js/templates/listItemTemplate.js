@@ -2,7 +2,7 @@ import makeElement from "../utils/makeElement"
 import trash from "../icons/trash"
 import edit from "../icons/edit"
 
-const listItemTemplate = function({id, category, title, isComplete}){
+const listItemTemplate = function({id, category, title, isComplete, endDate}){
     
     const template =
 `
@@ -10,16 +10,16 @@ const listItemTemplate = function({id, category, title, isComplete}){
     <ul class="flex">    
         <li>
             <ul>
+                <li><b>${title}</b></li>
                 <li>Category: ${category}</li>
-                <li>Title: ${title}</li>
-                <li>Complete: ${isComplete}</li>
-                <li>Date: *Placeholder*</li>
+                <li>Complete: ${isComplete ? 'DONE!' : 'Not yet'}</li>
+                <li>Date Due: ${endDate}</li>
             </ul>
         </li>
         <li>
             <div>
-                <button id="delete" data-key="${id}">${trash()}</button>
-                <button id="edit" data-key="${id}">${edit()}</button>
+                <button id="delete" class="delete" data-key="${id}">${trash()}</button>
+                <button id="edit" class="edit" data-key="${id}">${edit()}</button>
             </div>
         </li>
     </ul>

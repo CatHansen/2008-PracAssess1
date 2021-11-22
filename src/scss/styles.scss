@@ -1,10 +1,11 @@
 @use 'reboot';
-@use 'page';
-//@use 'header';
-@use 'ui-button';
 @use 'page-header';
 @use 'toDoList';
 @use 'pageNotFound';
+@use 'delete';
+@use 'form';
+@use 'editPage';
+@use 'addPage';
 
 
 // .button{

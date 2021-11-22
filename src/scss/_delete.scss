@@ -1,0 +1,27 @@
+div.deletePage {
+    text-align: center;
+}
+
+h1.deleteTitle {
+    font-style: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.deletePage li {
+    list-style: none;
+    text-align: left;
+}
+
+div.deletePage li .delete {
+    display: none;
+}
+
+div.deletePage li .edit {
+    display: none;
+}
+
+div.deletePage button {
+    margin: 0 1rem;
+}

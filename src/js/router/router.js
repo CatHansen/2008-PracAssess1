@@ -1,5 +1,5 @@
 import homePage from "./../pages/home";
-import toDoPage from "../pages/todo";
+import toDoPage from "../pages/todo/todo";
 import pageNotFound from "./../pages/notfound";
 import deletePage from "../pages/delete";
 import editPage from "../pages/edit";

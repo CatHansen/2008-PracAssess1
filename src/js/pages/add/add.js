@@ -1,6 +1,5 @@
 import button from "../../components/buttons/button"
 import { Router } from "../../router/router"
-import { getStore } from "../../redux/store"
 import makeElement from "../../utils/makeElement"
 import reducer from "../../redux/reducers"
 
@@ -10,6 +9,7 @@ const addButton = makeElement(button("add"))
 
 const addPage = function(props){
     const page = document.createElement('div')
+    page.classList.add('addPage')
 
     function cleanUp (){
         cancelButton.removeEventListener('click', onCancelAdd)
@@ -32,11 +32,12 @@ const addPage = function(props){
             const thisStartTime = document.getElementById("startTime").value
             const thisEndDate = document.getElementById("endDate").value
             const thisEndTime = document.getElementById("endTime").value
+            console.log(thisIsComplete)
 
             const addTask = {
                 id: thisId,
                 category: thisCategory,
-                idComplete: thisIsComplete,
+                isComplete: thisIsComplete,
                 title: thisTitle,
                 startDate: thisStartDate,
                 startTime: thisStartTime,

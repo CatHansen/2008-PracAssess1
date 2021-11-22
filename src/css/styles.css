@@ -415,18 +415,9 @@ table th {
   text-align: left;
 }
 
-body {
-  background-color: #6e6b64;
-}
-
-.button {
-  background-color: tomato;
-  padding: 1rem;
-}
-
 .page-header {
   text-align: center;
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -468,7 +459,7 @@ body {
 }
 
 header h2 {
-  color: #dbc3ac;
+  color: #152636;
 }
 
 header a {
@@ -481,34 +472,155 @@ header a {
   margin-left: calc(50vw - 4rem);
 }
 
-ul.toDoItem {
-  border: 1px solid black;
+button.addbutton {
+  width: 10rem;
+  background-color: lightblue;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button.todoNavButton {
+  width: 10rem;
+  background-color: lightblue;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+li.toDoItem {
+  border: 3px solid black;
   border-radius: 5px;
   padding: 1rem 2rem;
   margin: 1rem;
 }
 
-ul.fun {
-  background-color: lightcoral;
+li.fun {
+  border: 3px solid lightcoral;
 }
 
-ul.home {
-  background-color: lightskyblue;
+li.home {
+  border: 3px solid lightskyblue;
 }
 
-ul.school {
-  background-color: olivedrab;
+li.school {
+  border: 3px solid olivedrab;
 }
 
-ul.work {
-  background-color: burlywood;
+li.work {
+  border: 3px solid burlywood;
 }
 
-ul.health {
-  background-color: yellow;
+li.health {
+  border: 3px solid yellow;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button {
+  border-radius: 5px;
+}
+
+.delete {
+  background-color: transparent;
+  border: red solid 2px;
+  padding: 0 0.3rem;
+}
+
+.edit {
+  background-color: transparent;
+  border: green solid 2px;
+  padding: 0.4rem 0.6rem;
 }
 
 .deadFish path {
   fill: #dbc3ac;
+}
+
+div.deletePage {
+  text-align: center;
+}
+
+h1.deleteTitle {
+  font-style: bold;
+  font-size: 2.2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.deletePage li {
+  list-style: none;
+  text-align: left;
+}
+
+div.deletePage li .delete {
+  display: none;
+}
+
+div.deletePage li .edit {
+  display: none;
+}
+
+div.deletePage button {
+  margin: 0 1rem;
+}
+
+form {
+  padding: 1rem;
+}
+
+form > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2rem;
+}
+
+form input {
+  border-radius: 5px;
+  margin-left: 0.5rem;
+}
+
+form select {
+  border-radius: 5px;
+  margin-left: 0.5rem;
+}
+
+form input[type=checkbox] {
+  height: auto;
+  border: red, solid, 1px;
+}
+
+div.editPage {
+  margin: 1rem;
+  border: 2px lightblue solid;
+  border-radius: 7px;
+  padding: 1rem;
+}
+
+div.editPage h1 {
+  font-style: bold;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+div.editPage button {
+  margin: 0 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

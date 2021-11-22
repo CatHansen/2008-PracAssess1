@@ -12,6 +12,7 @@ const deleteButton = makeElement(button("delete"))
 
 const deletePage = function(props){
     const page = document.createElement('div')
+    page.classList.add('deletePage')
 
     function cleanUp (){
         cancelButton.removeEventListener('click', onCancelDelete)
@@ -41,7 +42,7 @@ const deletePage = function(props){
 
     let headerTemplate = `
         <main class="welcome center-in-page">
-            <h1>Delete Task</h1>
+            <h1 class="deleteTitle">Delete Task?</h1>
             <div></div>
         </main>
         `

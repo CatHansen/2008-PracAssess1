@@ -1,28 +1,28 @@
 li.toDoItem{
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     padding: 1rem 2rem;
     margin: 1rem;
 }
 
 li.fun{
-    background-color: lightcoral;
+    border: 3px solid lightcoral;
 }
 
 li.home{
-    background-color: lightskyblue;
+    border: 3px solid lightskyblue;
 }
 
 li.school{
-    background-color: olivedrab;
+    border: 3px solid olivedrab;
 }
 
 li.work{
-    background-color: burlywood;
+    border: 3px solid burlywood;
 }
 
 li.health{
-    background-color: yellow;
+    border: 3px solid yellow;
 }
 
 .flex{
@@ -37,11 +37,13 @@ button{
 }
 
 .delete{
-    background-color: red;
+    background-color: transparent;
+    border: red solid 2px;
     padding: 0 0.3rem;
 }
 
 .edit{
-    background-color: green;
+    background-color: transparent;
+    border: green solid 2px;
     padding: 0.4rem 0.6rem;
 }

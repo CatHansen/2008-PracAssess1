@@ -4,6 +4,7 @@ function reducer (action){
     let store = getStore();
     let index = action.payload.index;
     let newStore = store;
+    let newItem = action.payload.addTask
     switch(action.type){
         case "delete":
             // grabbing the current store
@@ -12,12 +13,11 @@ function reducer (action){
             action.cb()
         return "remove task";
         case "edit":
-            newStore = [...store.slice(0,index), ...store.slice(index+1)]
+            newStore = [...store.slice(0,index), newItem, ...store.slice(index+1)]
             updateStore(newStore)
             action.cb()
         return "edit task";
         case "add":
-            const newItem = action.payload.addTask
             console.log(newItem)
             newStore = [...store, newItem]
             updateStore(newStore)
